@@ -88,16 +88,23 @@ function findLongestWord (arr) {
 
 
 // Question 8
-function filterLongWords (arr,num) {
-  newArr = [];
-  for (var i = 0; i < arr.length; i++) {
-    if(arr[i].length > num){
-      newArr.push(arr[i]);
-    }
+var words = [];
+var newWords = [];
+var i= 4;
+
+function filterLongWords (words) {
+  // function needs to take an array of words and number i 
+  // function needs to compare each word in the array to the number 
+  // then the function needs to return all the words that are longer than the number 
+  for (var j = 0; j < words.length; j++){
+if (words[j].length > i){
+  newWords.push(words[j]);
+}
   }
-  return newArr;
+    return newWords;
 }
 
+filterLongWords(['Thursday', 'dog', 'cart', 'hello']);
 
 // Bonus 1
 function charactersOccurencesCount(stringToCount) {
